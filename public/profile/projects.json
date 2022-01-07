@@ -1,17 +1,17 @@
 {
     "projects" : [
         {
-            "image" : "images/projects/portfolio-poster.png",
-            "title": "Dev Portfolio",
+            "image" : "images/projects/porfolio.png",
+            "title": "Portfolio",
             "bodyText": "- Developer Portfolio Website made in React\n -  Fully customisable and dynamic, easily change data and images.\n - Dark Mode Support",
             "links": [
                 {
                     "text": "GitHub",
-                    "href": "https://github.com/mayankagarwal09/dev-portfolio"
+                    "href": "https://github.com/KhiemDuyNguyen/porfolio-test"
                 },
                 {
                     "text": "Live",
-                    "href": "https://mayankagarwal.me"
+                    "href": "https://kdnguyen.me"
                 }
             ],
             "tags" : [
@@ -21,129 +21,75 @@
             ]
         },
         {
-            "image" : "images/projects/caaring-poster.png",
-            "title": "Caaring -  Cab Share App",
-            "bodyText": "- A Cab Sharing web app made using **Django** for **VIT** Students. People can create a new cab or request to join an existing cab.\n - Added User authentication and password reset using **SendGrid**.\n - Deployed on **heroku** using **gunicorn**.",
+            "image" : "images/projects/tfs.png",
+            "title": "Open Data Portal",
+            "bodyText": "- Built web backend using Flask to combine, organize, categorize Axon, EDC, and IQD data for an automotive company TFS\n - Built Python scripts to preprocess raw data and populate data in PostgreSQL database\n - Built CRUD operations on multiple components with PostgreSQL database\n - Integrated project with continuous integration and continuous deployment (CI/CD) with GitHub on Elastic Beanstalk EC2 (Flask backend) and on Vercel (NodeJS frontend)\n - Applied Agile methodologies in project development, Jira with 2-week Sprint delivery to clients",
             "links": [
                 {
-                    "text": "GitHub",
-                    "href": "https://github.com/mayankagarwal09/Caaring"
+                    "text": "Live",
+                    "href": "https://tfsdp.vercel.app/home/business"
+                }
+            ],
+            "tags" : [
+                "Python",
+                "Flask",
+                "NodeJS",
+                "Vercel",
+                "PostgreSQL",
+                "Javascript"
+            ]
+        },
+        {
+            "image" : "images/projects/go.png",
+            "title": "AI2GO",
+            "bodyText": "- Published paper IPCCC 2020 – “Paradox of AlphaZero: Strategic vs. Optimal Plays” \n- Solved Go board game with a smaller board size (5x5 to 7x7) using the architecture of AlphaZero of Google’s DeepMind\n- Modified open-source code to be able to train neural networks that work with smaller board sizes\n- Developed Python scripting tools to analyze the output patterns to find optimal solutions on smaller Go sizes",
+            "links": [
+                {
+                    "text": "Paper",
+                    "href": "https://ieeexplore.ieee.org/document/9391562"
                 },
                 {
                     "text": "Live",
-                    "href": "http://caaring.herokuapp.com"
+                    "href": "https://ai.tcu.edu/"
                 }
             ],
             "tags" : [
+                "Open source",
                 "Python",
-                "Django",
-                "BootStrap",
-                "SendGrid",
-                "Heroku",
-                "Gunicorn",
-                "VIT"
+                "Tensorflow",
+                "C"
             ]
         },
         {
-            "image" : "images/projects/quiet-hours-poster.jpg",
-            "title": "Quiet Hours App",
-            "bodyText": "- An Android App that **automatically silences** your phone during class hours, designed for **VITians**.\n - Option to select class **slots** and **custom time**.\n - Option to put on Vibrate instead of Silent.",
+            "image" : "images/projects/gif1.gif",
+            "title": "Raspberry-Pi Toy Car",
+            "bodyText": "- Modified toy car into Raspberry-Pi remote control car through camera module and Wi-Fi network\n- Developed Python script to remote control over keyboard",
             "links": [
                 {
                     "text": "GitHub",
-                    "href": "https://github.com/mayankagarwal09/QuietHours-Android"
+                    "href": "https://github.com/KhiemDuyNguyen/RC-toy-car-RaspberryPi"
                 }
             ],
             "tags" : [
-                "Java",
-                "Android",
-                "Alarm Manager",
-                "VIT"
-            ]
-        },
-        {
-            "title": "Secure Chat App",
-            "bodyText": "- An Android App that allows users to send texts in real time.\n - End to End encryption using **RSA** Algorithm.\n - Uses **Firebase** database to store texts.\n - Secured with **Fingerprint** lock.",
-            "links": [
-                {
-                    "text": "GitHub",
-                    "href": "https://github.com/mayankagarwal09/SecureChatApp"
-                }
-            ],
-            "tags" : [
-                "Java",
-                "Android",
-                "Firebase",
-                "RSA"
-            ]
-        },
-        {
-            "title": "MVVM Sample App",
-            "bodyText": "- An Android App that loads data from mock API and show in both **LinearLayout** and **GridLayout RecyclerView**.\n - Offline support using **Room** DB and **NetworkBoundResource**.\n - Uses the **MVVM** architecture.",
-            "links": [
-                {
-                    "text": "GitHub",
-                    "href": "https://github.com/mayankagarwal09/mvvm-sample-app"
-                }
-            ],
-            "tags" : [
-                "Kotlin",
-                "Android",
-                "MVVM",
-                "Room",
-                "Coroutines",
-                "Flow",
-                "Hilt-Dagger",
-                "NetworkBoundResource"
-            ]
-        },
-        {
-            "title": "Feed List App",
-            "bodyText": "- An Android App that loads list of feeds from a **paginated** API and shows in a RecyclerView.\n - Uses the **MVVM** architecture.\n - Uses **Paging 3** library along with other Architecture Components.",
-            "links": [
-                {
-                    "text": "GitHub",
-                    "href": "https://github.com/mayankagarwal09/Paginated-App-Feeds-List"
-                }
-            ],
-            "tags" : [
-                "Kotlin",
-                "Android",
-                "MVVM",
-                "Paging 3",
-                "Coroutines",
-                "Flow"
-            ]
-        },
-        {
-            "title": "Task Tracker",
-            "bodyText": "- A simple Task Tracker web app made with **Angular 12**.\n - Uses **mock JSON server** to get, add, delete or update tasks.",
-            "links": [
-                {
-                    "text": "GitHub",
-                    "href": "https://github.com/mayankagarwal09/task-tracker-app"
-                }
-            ],
-            "tags" : [
-                "TypeScript",
-                "Angular 12",
-                "JavaScript"
-            ]
-        },
-        {
-            "title": "Image Encryption/Decryption",
-            "bodyText": "- A Web App for Image Encryption and Decryption made in **Django**.\n - Uses **SDES** algorithm for encryption/decryption.",
-            "links": [
-                {
-                    "text": "GitHub",
-                    "href": "https://github.com/mayankagarwal09/img-encrypt-sdes"
-                }
-            ],
-            "tags" : [
+                "Raspberry Pi",
                 "Python",
-                "Django",
-                "SDES",
-                "Cryptography"
+                "Open source"
+            ]
+        },
+        {
+            "image" : "images/projects/cv.png",
+            "title": "Emotion Detection",
+            "bodyText": "- Developed simple PyTorch trained model to detect basic facial emotions through computer’s webcam\n - Increased 20% accuracy from using customized dataset compared to the originally offered dataset",
+            "links": [
+                {
+                    "text": "Video",
+                    "href": "https://drive.google.com/file/d/18xhVtO0yc9KHdhhT-BLqziaQ-ovsWE3e/view?usp=sharing"
+                }
+            ],
+            "tags" : [
+                "PyTorch",
+                "Python",
+                "Open source"
             ]
         }
     ]

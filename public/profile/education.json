@@ -1,19 +1,24 @@
 {
     "education":[
         {
-            "title": "Jun 20XX - Jun 20YY",
-            "cardTitle": "B.Tech, Computer Science",
-            "cardSubtitle":"XYZ University, City",
-            "cardDetailedText": "CGPA - 9.5",
+            "title": "September 2018 - May 2022",
+            "cardTitle": "Computer Science and Mathematics",
+            "cardSubtitle":"Texas Christian University, Fort Worth, TX",
+            "cardDetailedText": "GPA - 3.8/4.0",
             "icon" : {
-                "src": "images/education/lorem-ipsum.png"
+                "src": "images/education/tcu-symbol.jpg"
             }
         },
         {
-            "title": "Apr 20XX",
-            "cardTitle": "High School",
-            "cardSubtitle":"ABC School, City",
-            "cardDetailedText": "Marks - 95%"
+            "title": "September 2016 - May 2018",
+            "cardTitle": "Associate of Science",
+            "cardSubtitle":"Tarrant County College, Arlington, TX",
+            "cardDetailedText": "GPA - 4.0/4.0"
+        },
+        {
+            "title": "September 2013 - May 2015",
+            "cardTitle": "Electricial Engineering",
+            "cardSubtitle":"Ho Chi Minh City University of Technology, Vietnam"
         }
     ]
 }

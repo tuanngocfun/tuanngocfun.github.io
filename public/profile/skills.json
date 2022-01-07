@@ -4,26 +4,27 @@
      
             "title": "Languages & Databases",
             "items" : [
-     
+                {
+                    "icon": "images/skills/python.png",
+                    "title": "Python"
+                },    
                 {
                     "icon": "images/skills/java.png",
                     "title": "Java"
-                },
-                {
-                    "icon": "images/skills/php.png",
-                    "title": "PHP"
                 },
                 {
                     "icon": "images/skills/js.png",
                     "title": "JavaScript"
                 },
                 {
-                    "icon": "images/skills/python.png",
-                    "title": "Python"
+                    "icon": "images/skills/php.png",
+                    "title": "SQL"
                 },
+
+
                 {
                     "icon": "images/skills/mysql.png",
-                    "title": "MySQL"
+                    "title": "NoSQL"
                 }
         ]},
         {

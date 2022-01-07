@@ -26,6 +26,7 @@ function Social() {
 
   return (
     <div className="social">
+      <h5> Contact me at:</h5> <br/>
       {data ? data.social.map((social) => (
         <SocialIcon
           key={social.network}

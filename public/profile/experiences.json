@@ -1,33 +1,45 @@
 {
     "experiences": [
         {
-            "title": "Software Engineer",
-            "subtitle": "XYZ Ltd",
-            "workType": "Full-time",
+            "title": "Research Assistant",
+            "subtitle": "Texas Christian University",
+            "workType": "Part-time",
             "workDescription": [
-                "Integrated **2** new product.",
-                "Worked on adding **def** to **bcd**. Improved speed by 50%."
+                "Researcher – Link: https://ieeexplore.ieee.org/document/9391562",
+                "Published paper IPCCC 2020 – “Paradox of AlphaZero: Strategic vs. Optimal Plays”",
+                "Solved Go board game with a smaller board size (5x5 to 7x7) using the architecture of AlphaZero of Google’s DeepMind",
+                "Modified open-source code to be able to train neural networks that work with smaller board sizes",
+                "Developed Python scripting tools to analyze the output patterns to find optimal solutions on smaller Go sizes"
             ],
-            "dateText": "06/20XX – Present"
+            "dateText": "03/2019 – Present"
         },
         {
-            "title": "Software Engineer",
-            "subtitle": "XYZ Ltd",
-            "workType": "Internship",
+            "title": "Network Security Course Assistant",
+            "subtitle": "Texas Christian University",
+            "workType": "Part-time",
             "workDescription": [
-                "Worked on abc."
+                "Prepared materials and programming assignments in Network Security class."
             ],
-            "dateText": "01/20XX – 05/20XX"
+            "dateText": "01/2022 – Present"
         },
         {
-            "title": "App Developer",
-            "subtitle": "ABC Pvt Ltd",
-            "workType": "Freelance",
+            "title": "Python and Java Course Assistant",
+            "subtitle": "Texas Christian University",
+            "workType": "Part-time",
             "workDescription": [
-                "Developed the official apps for the startup for both Android and iOS using hybrid framework.",
-                "Done bcd work."
+                "Graded assignments/homework in Python and Java language classes."
             ],
-            "dateText": "09/20XX – 01/20YY"
+            "dateText": "09/2019 – 12/2021"
+        },
+        {
+            "title": "Tutor",
+            "subtitle": "Tarrant County College",
+            "workType": "Part-time",
+            "workDescription": [
+                "Tutored students from all math courses taught at TCC.",
+                "Reviewed for student science-based courses from physics, and computer science department courses."
+            ],
+            "dateText": "07/2017 – 05/2018"
         }
     ]
 }

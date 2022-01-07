@@ -6,15 +6,22 @@ import Fade from 'react-reveal';
 import Header from './Header';
 import endpoints from '../constants/endpoints';
 import FallbackSpinner from './FallbackSpinner';
+import Github from './Github';
 
 const styles = {
   introTextContainer: {
-    margin: 10,
+    margin: 5,
     flexDirection: 'column',
     whiteSpace: 'pre-wrap',
     textAlign: 'left',
-    fontSize: '1.2em',
-    fontWeight: 500,
+    fontSize: '1em',
+    fontWeight: 600,
+  },
+  honorTextContainer: {
+    textAlign: 'left',
+    fontSize: '1em',
+    fontWeight: 450,
+    fontWeight: 600,
   },
   introImageContainer: {
     margin: 10,
@@ -45,6 +52,7 @@ function About(props) {
 
   return (
     <>
+    
       <Header title={header} />
       <div className="section-content-container">
         <Container>
@@ -55,6 +63,9 @@ function About(props) {
                   <Col style={styles.introTextContainer}>
                     {parseIntro(data.about)}
                   </Col>
+                  <Col style={styles.honorTextContainer}>
+                    {parseIntro(data.honor)}
+                  </Col>
                   <Col style={styles.introImageContainer}>
                     <img src={data?.imageSource} alt="profile" />
                   </Col>
@@ -63,6 +74,7 @@ function About(props) {
             )
             : <FallbackSpinner />}
         </Container>
+        <Github />
       </div>
     </>
   );
