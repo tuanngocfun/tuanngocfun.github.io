@@ -10,24 +10,22 @@ import Github from './Github';
 
 const styles = {
   introTextContainer: {
-    margin: 5,
-    flexDirection: 'column',
-    whiteSpace: 'pre-wrap',
     textAlign: 'left',
-    fontSize: '1em',
+    fontSize: '1.4em',
     fontWeight: 600,
+
   },
   honorTextContainer: {
     textAlign: 'left',
     fontSize: '1em',
-    fontWeight: 450,
     fontWeight: 600,
+    color:"#9AA3BB",
   },
   introImageContainer: {
     margin: 10,
     justifyContent: 'center',
     alignItems: 'center',
-    display: 'flex',
+    display: 'flex'
   },
 };
 
@@ -60,14 +58,16 @@ function About(props) {
             ? (
               <Fade>
                 <Row>
-                  <Col style={styles.introTextContainer}>
+                  <Col>
+                    <p style={styles.introTextContainer}>
                     {parseIntro(data.about)}
-                  </Col>
-                  <Col style={styles.honorTextContainer}>
+                    </p>
+                    <p style={styles.honorTextContainer}>
                     {parseIntro(data.honor)}
+                    </p>
                   </Col>
                   <Col style={styles.introImageContainer}>
-                    <img src={data?.imageSource} alt="profile" />
+                    <img src={data?.imageSource} alt="profile" width="65%" />
                   </Col>
                 </Row>
               </Fade>
