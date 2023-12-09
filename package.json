@@ -1,6 +1,6 @@
 {
     "name": "portfolio",
-    "homepage": "https://tnnguyen.me/",
+    "homepage": "https://tnnguyen-me.onrender.com/",
     "version": "0.1.0",
     "private": true,
     "dependencies": {
@@ -40,7 +40,7 @@
         "predeploy": "npm run build",
         "deploy": "gh-pages -d build",
         "start": "react-scripts start",
-        "build": "react-scripts build",
+        "build": "NODE_OPTIONS='--max-old-space-size=4096' react-scripts build",
         "test": "react-scripts test",
         "eject": "react-scripts eject"
     },
