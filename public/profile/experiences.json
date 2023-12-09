@@ -1,45 +1,29 @@
 {
     "experiences": [
         {
-            "title": "Research Assistant",
-            "subtitle": "Texas Christian University",
-            "workType": "Part-time",
+            "title": "Software Developer",
+            "subtitle": "FPT Software",
+            "workType": "Full-time",
             "workDescription": [
-                "Researcher – Link: https://ieeexplore.ieee.org/document/9391562",
-                "Published paper IPCCC 2020 – “Paradox of AlphaZero: Strategic vs. Optimal Plays”",
-                "Solved Go board game with a smaller board size (5x5 to 7x7) using the architecture of AlphaZero of Google’s DeepMind",
-                "Modified open-source code to be able to train neural networks that work with smaller board sizes",
-                "Developed Python scripting tools to analyze the output patterns to find optimal solutions on smaller Go sizes"
+                "Authoring two web applications using Spring Security and Spring Thymeleaf",
+                "Gaining experience in service deployment using Docker",
+                "Building frontend pages using Bootstrap 4 and HTML",
+                "Studying techniques for writing effective tests for our applications"
             ],
-            "dateText": "03/2019 – Present"
+            "dateText": "03/2023 – 06/2023"
         },
         {
-            "title": "Network Security Course Assistant",
-            "subtitle": "Texas Christian University",
+            "title": "Talent Innovation Employee",
+            "subtitle": "Schoolab",
             "workType": "Part-time",
             "workDescription": [
-                "Prepared materials and programming assignments in Network Security class."
+                "Conducted desk research on Asia’s workplace policies for culture, gender, and work environment",
+                "Designed interviews for blue-collar and white-collar workers to assess job satisfaction and needs",
+                "Analyzed gaps in LEGO’s sustainability policies compared to industry benchmarks",
+                "Developed creative solutions to foster harmony and sustainability",
+                "Secured senior management approval for phased policy implementation"
             ],
-            "dateText": "01/2022 – Present"
-        },
-        {
-            "title": "Python and Java Course Assistant",
-            "subtitle": "Texas Christian University",
-            "workType": "Part-time",
-            "workDescription": [
-                "Graded assignments/homework in Python and Java language classes."
-            ],
-            "dateText": "09/2019 – 12/2021"
-        },
-        {
-            "title": "Tutor",
-            "subtitle": "Tarrant County College",
-            "workType": "Part-time",
-            "workDescription": [
-                "Tutored students from all math courses taught at TCC.",
-                "Reviewed for student science-based courses from physics, and computer science department courses."
-            ],
-            "dateText": "07/2017 – 05/2018"
+            "dateText": "06/2023 – 08/2023"
         }
     ]
 }

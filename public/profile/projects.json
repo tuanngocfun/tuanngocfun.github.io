@@ -1,17 +1,17 @@
 {
     "projects" : [
         {
-            "image" : "images/projects/porfolio.png",
+            "image" : "images/projects/portfolio.png",
             "title": "Portfolio",
             "bodyText": "- Developer Portfolio Website made in React\n -  Fully customisable and dynamic, easily change data and images.\n - Dark Mode Support",
             "links": [
                 {
                     "text": "GitHub",
-                    "href": "https://github.com/KhiemDuyNguyen/porfolio-test"
+                    "href": "https://github.com/tuanngocfun/portfolio"
                 },
                 {
                     "text": "Live",
-                    "href": "https://kdnguyen.me"
+                    "href": "https://tnnguyen.me"
                 }
             ],
             "tags" : [
@@ -21,75 +21,103 @@
             ]
         },
         {
-            "image" : "images/projects/tfs.png",
-            "title": "Open Data Portal",
-            "bodyText": "- Built web backend using Flask to combine, organize, categorize Axon, EDC, and IQD data for an automotive company TFS\n - Built Python scripts to preprocess raw data and populate data in PostgreSQL database\n - Built CRUD operations on multiple components with PostgreSQL database\n - Integrated project with continuous integration and continuous deployment (CI/CD) with GitHub on Elastic Beanstalk EC2 (Flask backend) and on Vercel (NodeJS frontend)\n - Applied Agile methodologies in project development, Jira with 2-week Sprint delivery to clients",
-            "links": [
-                {
-                    "text": "Live",
-                    "href": "https://tfsdp.vercel.app/home/business"
-                }
-            ],
-            "tags" : [
-                "Python",
-                "Flask",
-                "NodeJS",
-                "Vercel",
-                "PostgreSQL",
-                "Javascript"
-            ]
-        },
-        {
-            "image" : "images/projects/go.png",
-            "title": "AI2GO",
-            "bodyText": "- Published paper IPCCC 2020 – “Paradox of AlphaZero: Strategic vs. Optimal Plays” \n- Solved Go board game with a smaller board size (5x5 to 7x7) using the architecture of AlphaZero of Google’s DeepMind\n- Modified open-source code to be able to train neural networks that work with smaller board sizes\n- Developed Python scripting tools to analyze the output patterns to find optimal solutions on smaller Go sizes",
-            "links": [
-                {
-                    "text": "Paper",
-                    "href": "https://ieeexplore.ieee.org/document/9391562"
-                },
-                {
-                    "text": "Live",
-                    "href": "https://ai.tcu.edu/"
-                }
-            ],
-            "tags" : [
-                "Open source",
-                "Python",
-                "Tensorflow",
-                "C"
-            ]
-        },
-        {
-            "image" : "images/projects/gif1.gif",
-            "title": "Raspberry-Pi Toy Car",
-            "bodyText": "- Modified toy car into Raspberry-Pi remote control car through camera module and Wi-Fi network\n- Developed Python script to remote control over keyboard",
+            "image" : "images/projects/app-selling-code.png",
+            "title": "App Selling Code Game",
+            "bodyText": "- Built website using NodeJS to sell code Game for client\n - Built SQL scripts to preprocess raw data and populate data in PostgreSQL database\n - Built CRUD operations on multiple components with PostgreSQL database\n - Integrated project with Docker and SSO from Facebook and Google api\n - Applied Agile methodologies in project development, Trell with 6-week Sprint delivery to submit teacher’s requirements",
             "links": [
                 {
                     "text": "GitHub",
-                    "href": "https://github.com/KhiemDuyNguyen/RC-toy-car-RaspberryPi"
+                    "href": "https://github.com/tuanngocfun/app-store-selling-code"
+                },
+                {
+                    "text": "Live",
+                    "href": "https://risen-gaming.onrender.com/"
                 }
             ],
             "tags" : [
-                "Raspberry Pi",
-                "Python",
-                "Open source"
+                "Javascript",
+                "React",
+                "NodeJS",
+                "PostgreSQL",
+                "Docker"
             ]
         },
         {
-            "image" : "images/projects/cv.png",
-            "title": "Emotion Detection",
-            "bodyText": "- Developed simple PyTorch trained model to detect basic facial emotions through computer’s webcam\n - Increased 20% accuracy from using customized dataset compared to the originally offered dataset",
+            "image" : "images/projects/food-supply-chain.png",
+            "title": "Food Supply Chain",
+            "bodyText": "- Build web app using Typescript and GO \n- Modified open-source code to be able to establish network written in GO\n- Using 3 organization from default code named it as Manufacturer, Distributor and Retailer\n - Collaborate and build smart contracts and ledger to store data in CouchDB, and build REST API for different organizers\n - Collaborate and build bash script to automate the process of building network, installing chaincode, installing web app ",
             "links": [
                 {
-                    "text": "Video",
-                    "href": "https://drive.google.com/file/d/18xhVtO0yc9KHdhhT-BLqziaQ-ovsWE3e/view?usp=sharing"
+                    "text": "GitHub",
+                    "href": "https://gitlab.com/tuanngocfun/blockchain-food-supply-chain"
+                },
+                {
+                    "text": "Open Source Code",
+                    "href": "https://github.com/hyperledger/fabric/tree/mergify/bp/release-2.2/pr-3750"
                 }
             ],
             "tags" : [
-                "PyTorch",
+                "TypeScript",
+                "NodeJS",
+                "GO",
+                "Bash Script",
+                "CouchDB"
+            ]
+        },
+
+        {
+            "image" : "images/projects/blog.png",
+            "title": "Web Blog",
+            "bodyText": "- Developed simple web blog for users\n - Implementing from idea of Viblo web blog\n - Built REST API with Spring Boot and PostgreSQL\n - Built WebMVC UI and Bootstrap\n - Built authentication with Spring Security\n - Built CRUD operations on multiple components with PostgreSQL database",
+            "links": [
+                {
+                    "text": "Video",
+                    "href": "https://drive.google.com/file/d/1QnURxwzEBFrS6mvtqSk18ve3TJpRjz4b/view?usp=sharing"
+                }
+            ],
+            "tags" : [
+                "Java",
+                "Spring Boot",
+                "JavaScript",
+                "HTML",
+                "CSS",
+                "WebMVC UI"
+            ]
+        },
+        {
+            "image" : "images/projects/human-animation-detection.png",
+            "title": "AI Application for Detecting Human in Animation Movies",
+            "bodyText": "- Developed Preprocessing strategy to filter image duplication and use open source pretrained model to detect human in animation movies\n- Increased 6% accuracy from using customized dataset compared to baseline model",
+            "links": [
+                {
+                    "text": "Video",
+                    "href": "https://drive.google.com/file/d/11jKXQ967PMFYEzGckFY2jSM2SjV88Tl3/view?usp=sharing"
+                }
+            ],
+            "tags" : [
+                "Pytorch",
                 "Python",
-                "Open source"
+                "sklearn",
+                "YOLO",
+                "Wandb",
+                "Bash Script"
+            ]
+        },
+        {
+            "image" : "images/projects/Time-scheduler.png",
+            "title": "Time Scheduler Web App",
+            "bodyText": "- Developed Time Scheduler Web App in Java\n- Using Tomcat Server and Postgres Database\n - Establishing the Cron Job to run the scheduler every period of time",
+            "links": [
+                {
+                    "text": "GitHub",
+                    "href": "https://github.com/thangvip4321/Time-Scheduler"
+                }
+            ],
+            "tags" : [
+                "Java",
+                "JavaFX",
+                "Cron Job",
+                "PostgreSQL"
             ]
         }
     ]

@@ -1,24 +1,17 @@
 {
     "education":[
         {
-            "title": "September 2018 - May 2022",
-            "cardTitle": "Computer Science and Mathematics",
-            "cardSubtitle":"Texas Christian University, Fort Worth, TX",
-            "cardDetailedText": "GPA - 3.85/4.0",
+            "title": "September 2019 - December 2023",
+            "cardTitle": "Computer Science Engineering",
+            "cardSubtitle":"Vietnamese-German University, Ben Cat, BD",
+            "cardDetailedText": "German Scale - 2.1",
             "icon" : {
                 "src": "images/education/tcu-symbol.jpg"
             }
         },
         {
-            "title": "September 2016 - May 2018",
-            "cardTitle": "Associate of Science",
-            "cardSubtitle":"Tarrant County College, Arlington, TX",
-            "cardDetailedText": "GPA - 4.0/4.0"
-        },
-        {
-            "title": "September 2013 - May 2015",
-            "cardTitle": "Electricial Engineering",
-            "cardSubtitle":"Ho Chi Minh City University of Technology, Vietnam"
+            "title": "September 2016 - June 2019",
+            "cardSubtitle":"Nguyen Cong Tru, Go Vap, HCM"
         }
     ]
 }

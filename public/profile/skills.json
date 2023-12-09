@@ -53,23 +53,14 @@
                     "icon": "images/skills/spring.png",
                     "title": "Spring"
                 },
-                {
-                    "icon": "images/skills/flask.png",
-                    "title": "Flask"
-                },
 
                 {
                     "icon": "images/skills/nodejs.png",
                     "title": "Nodejs"
-                }
-                ,
-                {
-                    "icon": "images/skills/aws.png",
-                    "title": "AWS"
                 },
                 {
-                    "icon": "images/skills/vercel.png",
-                    "title": "Vercel"
+                    "icon": "images/skills/pytorch.png",
+                    "title": "Pytorch"
                 }
             ]
         },
@@ -85,12 +76,12 @@
                     "title": "Docker"
                 },                
                 {
-                    "icon": "images/skills/react.png",
+                    "icon": "images/skills/linux.png",
                     "title": "Linux"
                 },                
                 {
-                    "icon": "images/skills/jira.png",
-                    "title": "Jira"
+                    "icon": "images/skills/trello.png",
+                    "title": "Trello"
                 },
 
                 {
@@ -99,8 +90,8 @@
                 },
 
                 {
-                    "icon": "images/skills/jenkins.png",
-                    "title": "Jenkins"
+                    "icon": "images/skills/gradle.png",
+                    "title": "Gradle"
                 }
             ]
     }
