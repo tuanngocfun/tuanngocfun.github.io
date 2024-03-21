@@ -7,11 +7,10 @@
             "workDescription": [
                 "Authoring two web applications using Spring Security and Spring Thymeleaf",
                 "Gaining experience in service deployment using Docker",
-                "Building frontend pages using Bootstrap 4 and HTML",
+                "Developing front-end interfaces and contributing to the design of back-end systems.",
                 "Studying techniques for writing effective tests for our applications"
             ],
             "dateText": "03/2023 – 06/2023"
         }
-        
     ]
 }
