@@ -36,7 +36,11 @@
                 "sklearn",
                 "YOLO",
                 "Wandb",
-                "Bash Script"
+                "Bash Script",
+                "TensorFlow",
+                "Real ESRGAN",
+                "Streamlit",
+                "Wandb"
             ]
         },
         {
@@ -53,7 +57,16 @@
                     "href": "https://risen-gaming.onrender.com/"
                 }
             ],
-            "tags": ["Javascript", "React", "NodeJS", "PostgreSQL", "Docker"]
+            "tags": [
+                "Javascript",
+                "React",
+                "NodeJS",
+                "PostgreSQL",
+                "Docker",
+                "MongoDB",
+                "SSO",
+                "Render Cloud"
+            ]
         },
         {
             "image": "images/projects/food-supply-chain.png",
