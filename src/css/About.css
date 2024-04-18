@@ -1,0 +1,187 @@
+/* Base styles */
+.about-container {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.about-text {
+    flex: 1;
+    overflow: auto;
+}
+
+.about-image {
+    width: 100%;
+    order: -1; /* Keep image on top on mobile */
+}
+
+.github-section {
+    display: none; /* Initially hide GitHub section */
+}
+
+/* Existing section styles */
+.about-section {
+    position: relative;
+    padding-top: 150px;
+    padding-bottom: 30px;
+    background-color: var(
+        --section-background-color
+    ); /* Assume you have this variable defined elsewhere */
+    color: white;
+}
+
+/* Styles for icons */
+.tech-icons {
+    font-size: 4.5em;
+    margin: 15px;
+    padding: 10px;
+    opacity: 0.93;
+    border: 1.7px solid rgba(200, 137, 230, 0.637);
+    vertical-align: middle;
+    text-align: center;
+    border-radius: 5px;
+    display: inline-block; /* Changed to inline-block for better control */
+    box-shadow: 4px 5px 4px 3px rgba(89, 4, 168, 0.137);
+    transition: all 0.4s ease;
+}
+
+.tech-icons:hover {
+    transform: scale(1.05);
+    border-color: rgba(197, 115, 230, 0.883);
+}
+
+/* Styles for images within icons, if any */
+.tech-icon-images {
+    padding: 20px;
+    line-height: 1.6;
+}
+
+/* Card view styles */
+.quote-card-view {
+    border: none;
+    color: white;
+    background-color: transparent;
+}
+
+/* Activity list styles */
+.about-activity {
+    list-style: none;
+    text-align: left;
+    padding-left: 1px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 767px) {
+    .tech-icons {
+        margin: 10px;
+    }
+
+    .about-img {
+        padding-top: 0;
+    }
+}
+
+/* Tablet styles */
+@media (min-width: 768px) {
+    .about-container {
+        flex-direction: row;
+    }
+
+    .about-image {
+        width: 50%;
+        order: 0; /* Reset order */
+    }
+}
+
+/* Desktop styles */
+@media (min-width: 1024px) {
+    .about-container {
+        flex-direction: row;
+    }
+
+    .about-image {
+        width: 35%; /* Adjust size as needed */
+    }
+}
+
+/* 4K styles */
+@media (min-width: 2560px) {
+    .about-container {
+        flex-direction: row;
+    }
+
+    .about-image {
+        width: 25%; /* Adjust size as needed */
+    }
+
+    .about-text,
+    .github-section {
+        max-width: 75%;
+    }
+
+    .github-section {
+        display: block; /* Always show GitHub section */
+    }
+}
+
+/* Hover effects for icons */
+.tech-icons:hover {
+    transform: scale(1.05);
+    border: 2.2px solid rgba(197, 115, 230, 0.883);
+}
+
+/* .about-section {
+    position: relative !important;
+    padding-top: 150px !important;
+    padding-bottom: 30px !important;
+    background-image: var(--section-background-color) !important;
+    color: white !important;
+  }
+  
+  .tech-icons {
+    font-size: 4.5em !important;
+    margin: 15px !important;
+    padding: 10px !important;
+    opacity: 0.93 !important;
+    border: 1.7px solid rgba(200, 137, 230, 0.637) !important;
+    vertical-align: middle !important;
+    text-align: center !important;
+    border-radius: 5px !important;
+    display: table !important;
+    box-shadow: 4px 5px 4px 3px rgba(89, 4, 168, 0.137) !important;
+    overflow: hidden !important;
+    transition: all 0.4s ease 0s !important;
+  }
+  
+  @media (max-width: 767px) {
+    .tech-icons {
+      margin: 10px !important;
+    }
+  }
+  
+  .tech-icons:hover {
+    transform: scale(1.05) !important;
+    overflow: hidden !important;
+    border: 2.2px solid rgba(197, 115, 230, 0.883) !important;
+  }
+  .tech-icon-images {
+    padding: 20px !important;
+    line-height: 1.6 !important;
+  }
+  
+  .quote-card-view {
+    border: none !important;
+    color: white !important;
+    background-color: transparent !important;
+  }
+  
+  .about-activity {
+    list-style: none !important;
+    text-align: left !important;
+    padding-left: 1px !important;
+  }
+  
+  @media (max-width: 767px) {
+    .about-img {
+      padding-top: 0 !important;
+    }
+  } */
