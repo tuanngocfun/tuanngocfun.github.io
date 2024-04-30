@@ -1,124 +1,134 @@
 {
-    "projects" : [
+  "projects": [
+    {
+      "image": "images/projects/portfolio.png",
+      "title": "Portfolio",
+      "bodyText": "- Developer Portfolio Website made in React\n -  Fully customisable and dynamic, easily change data and images.\n - Dark Mode Support",
+      "links": [
         {
-            "image" : "images/projects/portfolio.png",
-            "title": "Portfolio",
-            "bodyText": "- Developer Portfolio Website made in React\n -  Fully customisable and dynamic, easily change data and images.\n - Dark Mode Support",
-            "links": [
-                {
-                    "text": "GitHub",
-                    "href": "https://github.com/tuanngocfun/portfolio"
-                },
-                {
-                    "text": "Live",
-                    "href": "https://tnnguyen-me.onrender.com/"
-                }
-            ],
-            "tags" : [
-                "React",
-                "Portfolio",
-                "JavaScript"
-            ]
+          "text": "GitHub",
+          "href": "https://github.com/tuanngocfun/portfolio"
         },
         {
-            "image" : "images/projects/app-selling-code.png",
-            "title": "App Selling Code Game",
-            "bodyText": "- Built website using NodeJS to sell code Game for client\n - Built SQL scripts to preprocess raw data and populate data in PostgreSQL database\n - Built CRUD operations on multiple components with PostgreSQL database\n - Integrated project with Docker and SSO from Facebook and Google api\n - Applied Agile methodologies in project development, Trell with 6-week Sprint delivery to submit teacher’s requirements",
-            "links": [
-                {
-                    "text": "GitHub",
-                    "href": "https://github.com/tuanngocfun/app-store-selling-code"
-                },
-                {
-                    "text": "Live",
-                    "href": "https://risen-gaming.onrender.com/"
-                }
-            ],
-            "tags" : [
-                "Javascript",
-                "React",
-                "NodeJS",
-                "PostgreSQL",
-                "Docker"
-            ]
-        },
-        {
-            "image" : "images/projects/food-supply-chain.png",
-            "title": "Food Supply Chain",
-            "bodyText": "- Build web app using Typescript and GO \n- Modified open-source code to be able to establish network written in GO\n- Using 3 organization from default code named it as Manufacturer, Distributor and Retailer\n - Collaborate and build smart contracts and ledger to store data in CouchDB, and build REST API for different organizers\n - Collaborate and build bash script to automate the process of building network, installing chaincode, installing web app ",
-            "links": [
-                {
-                    "text": "GitHub",
-                    "href": "https://gitlab.com/tuanngocfun/blockchain-food-supply-chain"
-                },
-                {
-                    "text": "Open Source Code",
-                    "href": "https://github.com/hyperledger/fabric/tree/mergify/bp/release-2.2/pr-3750"
-                }
-            ],
-            "tags" : [
-                "TypeScript",
-                "NodeJS",
-                "GO",
-                "Bash Script",
-                "CouchDB"
-            ]
-        },
-
-        {
-            "image" : "images/projects/blog.png",
-            "title": "Web Blog",
-            "bodyText": "- Developed simple web blog for users\n - Implementing from idea of Viblo web blog\n - Built REST API with Spring Boot and PostgreSQL\n - Built WebMVC UI and Bootstrap\n - Built authentication with Spring Security\n - Built CRUD operations on multiple components with PostgreSQL database",
-            "links": [
-                {
-                    "text": "Video",
-                    "href": "https://drive.google.com/file/d/1QnURxwzEBFrS6mvtqSk18ve3TJpRjz4b/view?usp=sharing"
-                }
-            ],
-            "tags" : [
-                "Java",
-                "Spring Boot",
-                "JavaScript",
-                "HTML",
-                "CSS",
-                "WebMVC UI"
-            ]
-        },
-        {
-            "image" : "images/projects/human-animation-detection.png",
-            "title": "AI Application for Detecting Human in Animation Movies",
-            "bodyText": "- Developed Preprocessing strategy to filter image duplication and use open source pretrained model to detect human in animation movies\n- Increased 6% accuracy from using customized dataset compared to baseline model",
-            "links": [
-                {
-                    "text": "Video",
-                    "href": "https://drive.google.com/file/d/11jKXQ967PMFYEzGckFY2jSM2SjV88Tl3/view?usp=sharing"
-                }
-            ],
-            "tags" : [
-                "Pytorch",
-                "Python",
-                "sklearn",
-                "YOLO",
-                "Wandb",
-                "Bash Script"
-            ]
-        },
-        {
-            "image" : "images/projects/Time-scheduler.png",
-            "title": "Time Scheduler Web App",
-            "bodyText": "- Developed Time Scheduler Web App in Java\n- Using Tomcat Server and Postgres Database\n - Establishing the Cron Job to run the scheduler every period of time",
-            "links": [
-                {
-                    "text": "GitHub",
-                    "href": "https://github.com/thangvip4321/Time-Scheduler"
-                }
-            ],
-            "tags" : [
-                "Java",
-                "JavaFX",
-                "Cron Job",
-                "PostgreSQL"
-            ]
+          "text": "Live",
+          "href": "https://tuanngocfun.github.io/"
         }
-    ]
+      ],
+      "tags": ["React", "Portfolio", "JavaScript"]
+    },
+    {
+      "image": "images/projects/human-animation-detection.png",
+      "title": "AI Application for Detecting Human in Animation Movies",
+      "bodyText": "- Developed Preprocessing strategy to filter image duplication and use open source pretrained model to detect human in animation movies\n- Increased 6% accuracy from using customized dataset compared to baseline model",
+      "links": [
+        {
+          "text": "report",
+          "href": "https://drive.google.com/file/d/1db2hP4xf0jy9J3wUoYV2Q6lw8DdYmcYK/view?usp=sharing"
+        },
+        {
+          "text": "Video",
+          "href": "https://drive.google.com/file/d/11jKXQ967PMFYEzGckFY2jSM2SjV88Tl3/view?usp=sharing"
+        }
+      ],
+      "tags": [
+        "Pytorch",
+        "Python",
+        "sklearn",
+        "YOLO",
+        "Wandb",
+        "Bash Script",
+        "TensorFlow",
+        "Real ESRGAN",
+        "Streamlit",
+        "Wandb"
+      ]
+    },
+    {
+      "image": "images/projects/app-selling-code.png",
+      "title": "App Selling Code Game",
+      "bodyText": "- Built website using NodeJS to sell code Game for client\n - Built SQL scripts to preprocess raw data and populate data in PostgreSQL database\n - Built CRUD operations on multiple components with PostgreSQL database\n - Integrated project with Docker and SSO from Facebook and Google api\n - Applied Agile methodologies in project development, Trell with 6-week Sprint delivery to submit teacher’s requirements",
+      "links": [
+        {
+          "text": "GitHub",
+          "href": "https://github.com/tuanngocfun/app-store-selling-code"
+        },
+        {
+          "text": "Live",
+          "href": "https://risen-gaming.onrender.com/"
+        }
+      ],
+      "tags": [
+        "Javascript",
+        "React",
+        "NodeJS",
+        "PostgreSQL",
+        "Docker",
+        "MongoDB",
+        "SSO",
+        "Render Cloud"
+      ]
+    },
+    {
+      "image": "images/projects/kenken.png",
+      "title": "KenKen Puzzle Android Mobile Game",
+      "bodyText": "- Design a Simple Java Kotlin Android Mobile Game Application\n - Applied Java and Kotlin to construct the game's logic on the console before migrating to Android\n - Utilized the Model-View-Controller-ViewModel (MVCVM) architecture\n - Leveraging XML layouts and Android Studio’s drag-and-drop editor for a user-centric design.\n - Sets up observers on LiveData objects to automatically update the UI in response to data changes\n - Design Fragment Lifecycle to handle the game’s state and user interactions",
+      "links": [
+        {
+          "text": "APK",
+          "href": "https://drive.google.com/file/d/1jzfIMEqvtc4xQmZfonXXESISTjxeUR46/view?usp=sharing"
+        }
+      ],
+      "tags": [
+        "Javascript",
+        "React",
+        "NodeJS",
+        "PostgreSQL",
+        "Docker",
+        "MongoDB",
+        "SSO",
+        "Render Cloud"
+      ]
+    },
+    {
+      "image": "images/projects/food-supply-chain.png",
+      "title": "Food Supply Chain",
+      "bodyText": "- Build web app using Typescript and GO \n- Modified open-source code to be able to establish network written in GO\n- Using 3 organization from default code named it as Manufacturer, Distributor and Retailer\n - Collaborate and build smart contracts and ledger to store data in CouchDB, and build REST API for different organizers\n - Collaborate and build bash script to automate the process of building network, installing chaincode, installing web app ",
+      "links": [
+        {
+          "text": "GitHub",
+          "href": "https://gitlab.com/tuanngocfun/blockchain-food-supply-chain"
+        },
+        {
+          "text": "Open Source Code",
+          "href": "https://github.com/hyperledger/fabric/tree/mergify/bp/release-2.2/pr-3750"
+        }
+      ],
+      "tags": ["TypeScript", "NodeJS", "GO", "Bash Script", "CouchDB"]
+    },
+
+    {
+      "image": "images/projects/blog.png",
+      "title": "Web Blog",
+      "bodyText": "- Developed simple web blog for users\n - Implementing from idea of Viblo web blog\n - Built REST API with Spring Boot and PostgreSQL\n - Built WebMVC UI and Bootstrap\n - Built authentication with Spring Security\n - Built CRUD operations on multiple components with PostgreSQL database",
+      "links": [
+        {
+          "text": "Video",
+          "href": "https://drive.google.com/file/d/1QnURxwzEBFrS6mvtqSk18ve3TJpRjz4b/view?usp=sharing"
+        }
+      ],
+      "tags": ["Java", "Spring Boot", "JavaScript", "HTML", "CSS", "WebMVC UI"]
+    },
+    {
+      "image": "images/projects/Time-scheduler.png",
+      "title": "Time Scheduler Web App",
+      "bodyText": "- Developed Time Scheduler Web App in Java\n- Using Tomcat Server and Postgres Database\n - Establishing the Cron Job to run the scheduler every period of time",
+      "links": [
+        {
+          "text": "GitHub",
+          "href": "https://github.com/thangvip4321/Time-Scheduler"
+        }
+      ],
+      "tags": ["Java", "JavaFX", "Cron Job", "PostgreSQL"]
+    }
+  ]
 }
