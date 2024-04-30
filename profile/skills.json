@@ -95,6 +95,10 @@
           "icon": "images/skills/aws.png",
           "title": "AWS"
         },
+        {
+          "icon": "images/skills/android-studio.png",
+          "title": "Android Studio"
+        },
 
         {
           "icon": "images/skills/agile.png",
