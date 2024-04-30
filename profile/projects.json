@@ -78,16 +78,7 @@
           "href": "https://drive.google.com/file/d/1jzfIMEqvtc4xQmZfonXXESISTjxeUR46/view?usp=sharing"
         }
       ],
-      "tags": [
-        "Java",
-        "Kotlin",
-        "XML",
-        "Android Studio",
-        "Gradle",
-        "MongoDB",
-        "SSO",
-        "Render Cloud"
-      ]
+      "tags": ["Java", "Kotlin", "XML", "Android Studio", "Gradle"]
     },
     {
       "image": "images/projects/food-supply-chain.png",
