@@ -1,38 +1,39 @@
 {
-  "logo": {
-    "source": "images/logo.png",
-    "height": 45,
-    "width": 50
-  },
-  "sections": [
-    {
-      "title": "Home",
-      "href": "/"
+    "logo" : {
+        "source": "images/logo.png",
+        "height" : 45,
+        "width" : 50
     },
-    {
-      "title": "About",
-      "href": "/about"
-    },
-    {
-      "title": "Skills",
-      "href": "/skills"
-    },
-    {
-      "title": "Education",
-      "href": "/education"
-    },
-    {
-      "title": "Experience",
-      "href": "/experience"
-    },
-    {
-      "title": "Projects",
-      "href": "/projects"
-    },
-    {
-      "title": "Resume",
-      "href": "https://drive.google.com/file/d/1DUV5bilEucyVzISHLPY_a5bvNlP3vRBS/view?usp=sharing",
-      "type": "link"
-    }
-  ]
+    "sections": [
+        {
+            "title": "Home",
+            "href": "/"
+        },
+        {
+            "title": "About",
+            "href": "/about"
+        },
+        {
+            "title": "Skills",
+            "href": "/skills"
+        },
+        {
+            "title": "Education",
+            "href": "/education"
+        },
+        {
+            "title": "Experience",
+            "href": "/experience"
+        },
+        {
+            "title": "Projects",
+            "href": "/projects"
+        },
+        {
+            "title": "Resume",
+            "href": "https://drive.google.com/file/d/1GfHfbngIAP1BbErapyRgTHUL3OL3tRcF/view?usp=sharing",
+            "type": "link"
+        }
+    ]
+
 }
