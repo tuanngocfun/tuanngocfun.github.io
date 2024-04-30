@@ -17,6 +17,33 @@
             "tags": ["React", "Portfolio", "JavaScript"]
         },
         {
+            "image": "images/projects/human-animation-detection.png",
+            "title": "AI Application for Detecting Human in Animation Movies",
+            "bodyText": "- Developed Preprocessing strategy to filter image duplication and use open source pretrained model to detect human in animation movies\n- Increased 6% accuracy from using customized dataset compared to baseline model",
+            "links": [
+                {
+                    "text": "report",
+                    "href": "https://drive.google.com/file/d/1db2hP4xf0jy9J3wUoYV2Q6lw8DdYmcYK/view?usp=sharing"
+                },
+                {
+                    "text": "Video",
+                    "href": "https://drive.google.com/file/d/11jKXQ967PMFYEzGckFY2jSM2SjV88Tl3/view?usp=sharing"
+                }
+            ],
+            "tags": [
+                "Pytorch",
+                "Python",
+                "sklearn",
+                "YOLO",
+                "Wandb",
+                "Bash Script",
+                "TensorFlow",
+                "Real ESRGAN",
+                "Streamlit",
+                "Wandb"
+            ]
+        },
+        {
             "image": "images/projects/app-selling-code.png",
             "title": "App Selling Code Game",
             "bodyText": "- Built website using NodeJS to sell code Game for client\n - Built SQL scripts to preprocess raw data and populate data in PostgreSQL database\n - Built CRUD operations on multiple components with PostgreSQL database\n - Integrated project with Docker and SSO from Facebook and Google api\n - Applied Agile methodologies in project development, Trell with 6-week Sprint delivery to submit teacher’s requirements",
@@ -30,7 +57,16 @@
                     "href": "https://risen-gaming.onrender.com/"
                 }
             ],
-            "tags": ["Javascript", "React", "NodeJS", "PostgreSQL", "Docker"]
+            "tags": [
+                "Javascript",
+                "React",
+                "NodeJS",
+                "PostgreSQL",
+                "Docker",
+                "MongoDB",
+                "SSO",
+                "Render Cloud"
+            ]
         },
         {
             "image": "images/projects/food-supply-chain.png",
@@ -66,25 +102,6 @@
                 "HTML",
                 "CSS",
                 "WebMVC UI"
-            ]
-        },
-        {
-            "image": "images/projects/human-animation-detection.png",
-            "title": "AI Application for Detecting Human in Animation Movies",
-            "bodyText": "- Developed Preprocessing strategy to filter image duplication and use open source pretrained model to detect human in animation movies\n- Increased 6% accuracy from using customized dataset compared to baseline model",
-            "links": [
-                {
-                    "text": "Video",
-                    "href": "https://drive.google.com/file/d/11jKXQ967PMFYEzGckFY2jSM2SjV88Tl3/view?usp=sharing"
-                }
-            ],
-            "tags": [
-                "Pytorch",
-                "Python",
-                "sklearn",
-                "YOLO",
-                "Wandb",
-                "Bash Script"
             ]
         },
         {

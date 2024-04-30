@@ -58,12 +58,12 @@ const ProjectCard = (props) => {
         </Card.Body>
 
         <Card.Body>
-          {project?.links?.map((link) => (
+          {project?.links?.map((link, index) => (
             <Button
-              key={link.href}
+              key={`${link.href}-${index}`} // Ensure each key is unique
               style={styles.buttonStyle}
-              variant={'outline-' + theme.bsSecondaryVariant}
-              onClick={() => window.open(link.href, '_blank')}
+              variant={"outline-" + theme.bsSecondaryVariant}
+              onClick={() => window.open(link.href, "_blank")}
             >
               {link.text}
             </Button>

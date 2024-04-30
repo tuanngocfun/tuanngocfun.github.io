@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "*.rmd": "markdown",
+        "climits": "cpp",
+        "algorithm": "cpp"
+    }
+}
