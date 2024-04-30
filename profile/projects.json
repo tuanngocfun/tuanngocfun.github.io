@@ -69,7 +69,7 @@
       ]
     },
     {
-      "image": "public/images/projects/kenken.png",
+      "image": "images/projects/kenken.png",
       "title": "KenKen Puzzle Android Mobile Game",
       "bodyText": "- Design a Simple Java Kotlin Android Mobile Game Application\n - Applied Java and Kotlin to construct the game's logic on the console before migrating to Android\n - Utilized the Model-View-Controller-ViewModel (MVCVM) architecture\n - Leveraging XML layouts and Android Studio’s drag-and-drop editor for a user-centric design.\n - Sets up observers on LiveData objects to automatically update the UI in response to data changes\n - Design Fragment Lifecycle to handle the game’s state and user interactions",
       "links": [
