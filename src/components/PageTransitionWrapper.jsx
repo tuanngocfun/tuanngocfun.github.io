@@ -72,7 +72,6 @@ const PageTransitionWrapper = ({ children, pageKey }) => {
     );
 };
 
-
 // Add PropTypes for validation
 PageTransitionWrapper.propTypes = {
     children: PropTypes.node.isRequired, // React node expected for children

@@ -85,6 +85,18 @@
       "tags": ["Java", "Kotlin", "XML", "Android Studio", "Gradle"]
     },
     {
+      "image": "images/projects/cpu-scheduling-algo.gif",
+      "title": "CPU Scheduling Algorithm",
+      "bodyText": "- Created a desktop application providing essential graphs for calculating various CPU scheduling algorithms.\n - Developed the UI using Swing GUI.\n - Calculated waiting times, turnaround times, and their averages responsively.\n - Wrote unit tests to check the correctness of each algorithm.\n - Drew Gantt Charts to depict the scheduling progress.\n - Implemented scheduling algorithms for CPU and I/O and performed calculations.",
+      "links": [
+        {
+          "text": "GitHub",
+          "href": "https://github.com/tuanngocfun/CPU-Scheduling-Algo"
+        }
+      ],
+      "tags": ["Java", "Swing", "Unit Test", "Gantt Chart", "Maven"]
+    },
+    {
       "image": "images/projects/food-supply-chain.png",
       "title": "Food Supply Chain",
       "bodyText": "- Build web app using Typescript and GO \n- Modified open-source code to be able to establish network written in GO\n- Using 3 organization from default code named it as Manufacturer, Distributor and Retailer\n - Collaborate and build smart contracts and ledger to store data in CouchDB, and build REST API for different organizers\n - Collaborate and build bash script to automate the process of building network, installing chaincode, installing web app ",
