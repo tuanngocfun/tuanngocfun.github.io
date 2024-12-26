@@ -1,4 +1,5 @@
 import React, { Suspense } from 'react';
+import PropTypes from "prop-types";
 import { useQuery } from 'react-query';
 import { Switch, Route } from 'react-router-dom';
 import FallbackSpinner from './components/FallbackSpinner';
@@ -14,6 +15,35 @@ const Education = React.lazy(() => import('./components/Education'));
 const Experience = React.lazy(() => import('./components/Experience'));
 const Projects = React.lazy(() => import('./components/Projects'));
 
+// Reusable route component
+function RenderRoute({ path, pageKey, Component, header }) {
+    return (
+        <Route
+            path={path}
+            render={() => (
+                <Suspense fallback={<FallbackSpinner />}>
+                    <PageTransitionWrapper pageKey={pageKey}>
+                        <Component header={header} />
+                    </PageTransitionWrapper>
+                </Suspense>
+            )}
+        />
+    );
+}
+
+// Define prop types
+RenderRoute.propTypes = {
+    path: PropTypes.string.isRequired,
+    pageKey: PropTypes.string.isRequired,
+    Component: PropTypes.elementType.isRequired, // React component
+    header: PropTypes.string, // Optional header
+};
+
+// Define default props (optional)
+RenderRoute.defaultProps = {
+    header: null, // Default to null if not provided
+};
+
 function MainApp() {
     const { isLoading, error } = useQuery('routesData', () =>
         fetch(endpoints.routes).then(res => res.json())
@@ -27,67 +57,12 @@ function MainApp() {
             <NavBarWithRouter />
             <main className="main">
                 <Switch>
-                    <Route
-                        exact
-                        path="/"
-                        render={() => (
-                            <Suspense fallback={<FallbackSpinner />}>
-                                <PageTransitionWrapper pageKey="home">
-                                    <Home />
-                                </PageTransitionWrapper>
-                            </Suspense>
-                        )}
-                    />
-                    <Route
-                        path="/about"
-                        render={() => (
-                            <Suspense fallback={<FallbackSpinner />}>
-                                <PageTransitionWrapper pageKey="about">
-                                    <About header="About" />
-                                </PageTransitionWrapper>
-                            </Suspense>
-                        )}
-                    />
-                    <Route
-                        path="/skills"
-                        render={() => (
-                            <Suspense fallback={<FallbackSpinner />}>
-                                <PageTransitionWrapper pageKey="skills">
-                                    <Skills header="Skills" />
-                                </PageTransitionWrapper>
-                            </Suspense>
-                        )}
-                    />
-                    <Route
-                        path="/education"
-                        render={() => (
-                            <Suspense fallback={<FallbackSpinner />}>
-                                <PageTransitionWrapper pageKey="education">
-                                    <Education header="Education" />
-                                </PageTransitionWrapper>
-                            </Suspense>
-                        )}
-                    />
-                    <Route
-                        path="/experience"
-                        render={() => (
-                            <Suspense fallback={<FallbackSpinner />}>
-                                <PageTransitionWrapper pageKey="experience">
-                                    <Experience header="Experience" />
-                                </PageTransitionWrapper>
-                            </Suspense>
-                        )}
-                    />
-                    <Route
-                        path="/projects"
-                        render={() => (
-                            <Suspense fallback={<FallbackSpinner />}>
-                                <PageTransitionWrapper pageKey="projects">
-                                    <Projects header="Projects" />
-                                </PageTransitionWrapper>
-                            </Suspense>
-                        )}
-                    />
+                    <RenderRoute exact path="/" Component={Home} />
+                    <RenderRoute path="/about" Component={About} header="About" />
+                    <RenderRoute path="/skills" Component={Skills} header="Skills" />
+                    <RenderRoute path="/education" Component={Education} header="Education" />
+                    <RenderRoute path="/experience" Component={Experience} header="Experience" />
+                    <RenderRoute path="/projects" Component={Projects} header="Projects" />
                     {/* Add more routes as needed */}
                 </Switch>
             </main>
