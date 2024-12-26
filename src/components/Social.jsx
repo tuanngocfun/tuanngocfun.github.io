@@ -60,8 +60,7 @@ function Social() {
         <div className="social">
             <h5>Contact me at:</h5> <br />
             <div style={iconContainerStyle}>
-                {data &&
-                    data.social.map((social) => (
+                {data?.social?.map((social) => (
                         <motion.div
                             key={social.network}
                             variants={iconVariants}

@@ -22,7 +22,7 @@
       "bodyText": "- Developed Preprocessing strategy to filter image duplication and use open source pretrained model to detect human in animation movies\n- Increased 6% accuracy from using customized dataset compared to baseline model",
       "links": [
         {
-          "text": "report",
+          "text": "Report",
           "href": "https://drive.google.com/file/d/1db2hP4xf0jy9J3wUoYV2Q6lw8DdYmcYK/view?usp=sharing"
         },
         {
@@ -76,9 +76,25 @@
         {
           "text": "APK",
           "href": "https://drive.google.com/file/d/1jzfIMEqvtc4xQmZfonXXESISTjxeUR46/view?usp=sharing"
+        },
+        {
+          "text": "Video",
+          "href": "https://drive.google.com/file/d/11jKXQ967PMFYEzGckFY2jSM2SjV88Tl3/view?usp=sharing"
         }
       ],
       "tags": ["Java", "Kotlin", "XML", "Android Studio", "Gradle"]
+    },
+    {
+      "image": "images/projects/cpu-scheduling-algo.gif",
+      "title": "CPU Scheduling Algorithm",
+      "bodyText": "- Created a desktop application providing essential graphs for calculating various CPU scheduling algorithms.\n - Developed the UI using Swing GUI.\n - Calculated waiting times, turnaround times, and their averages responsively.\n - Wrote unit tests to check the correctness of each algorithm.\n - Drew Gantt Charts to depict the scheduling progress.\n - Implemented scheduling algorithms for CPU and I/O and performed calculations.",
+      "links": [
+        {
+          "text": "GitHub",
+          "href": "https://github.com/tuanngocfun/CPU-Scheduling-Algo"
+        }
+      ],
+      "tags": ["Java", "Swing", "Unit Test", "Gantt Chart", "Maven"]
     },
     {
       "image": "images/projects/food-supply-chain.png",

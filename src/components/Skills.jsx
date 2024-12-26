@@ -25,7 +25,7 @@ function Skills(props) {
 
   const renderSkillsIntro = (intro) => (
     <h4 style={styles.introTextContainer}>
-      <ReactMarkdown children={intro} />
+      <ReactMarkdown>{intro}</ReactMarkdown>
     </h4>
   );
 

@@ -44,7 +44,7 @@ function About({ header }) {
 
     const parseIntro = (text, style) => (
         <div style={style}>
-            <ReactMarkdown children={text} />
+            <ReactMarkdown>{text}</ReactMarkdown>
         </div>
     );
 
