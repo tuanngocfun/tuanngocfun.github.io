@@ -52,7 +52,8 @@ const StyledMotionDiv = styled(motion.div)`
   alignItems: 'center'; // Center children horizontally
 `;
 
-const PageTransitionWrapper = ({ children, pageKey }) => {
+const PageTransitionWrapper = (props) => {
+    const { children, pageKey } = props;
     return (
         <AnimatePresence mode="wait">
             <StyledMotionDiv
