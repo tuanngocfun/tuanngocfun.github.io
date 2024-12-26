@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import { motion, AnimatePresence } from "framer-motion";
 // import '../css/PageTransitions.css'
 import styled from "styled-components";
@@ -69,6 +70,13 @@ const PageTransitionWrapper = ({ children, pageKey }) => {
             </StyledMotionDiv>
         </AnimatePresence>
     );
+};
+
+
+// Add PropTypes for validation
+PageTransitionWrapper.propTypes = {
+    children: PropTypes.node.isRequired, // React node expected for children
+    pageKey: PropTypes.string.isRequired, // String for pageKey
 };
 
 export default PageTransitionWrapper;
