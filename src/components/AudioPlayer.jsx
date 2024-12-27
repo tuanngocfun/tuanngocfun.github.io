@@ -2,8 +2,12 @@
 import React, { useContext, useEffect } from "react";
 import PropTypes from "prop-types";
 import styles from "../css/AudioPlayer.module.css";
-import { BsArrowLeftShort, BsArrowRightShort } from "react-icons/bs";
-import { BsSkipStart, BsSkipEnd } from "react-icons/bs";
+import {
+  BsArrowLeftShort,
+  BsArrowRightShort,
+  BsSkipStart,
+  BsSkipEnd,
+} from "react-icons/bs";
 import { FaPlay, FaPause } from "react-icons/fa";
 import { IoMdExpand, IoMdContract } from "react-icons/io";
 import { AudioContext } from "../contexts/AudioContext";
