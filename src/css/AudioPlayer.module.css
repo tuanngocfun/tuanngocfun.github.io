@@ -1,0 +1,337 @@
+/* src/css/AudioPlayer.module.css */
+.audioPlayer {
+  --primary: #f40082;
+  --secondary: #ffd200;
+  --roundedCorner: 10px;
+  --bar-bg: #ffe3d4;
+  --seek-before-color: #ffc2a1;
+  --knobby: #3452a5;
+  --selectedKnobby: #26c9c3;
+
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+
+/* Collapsed State */
+.audioPlayer:not(.expanded) {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: var(--primary);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.floatingIcon {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background: transparent;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: transform 0.2s ease;
+}
+
+.expanded {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 300px;
+  background: white;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.floatingIcon:hover {
+  transform: scale(1.1);
+}
+
+/* Expanded State */
+.audioPlayer.expanded {
+  width: 300px;
+  background: white;
+  border-radius: var(--roundedCorner);
+  padding: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.header {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 15px;
+}
+
+.collapseButton {
+  background: transparent;
+  border: none;
+  color: var(--primary);
+  cursor: pointer;
+  font-size: 20px;
+  padding: 5px;
+  transition: transform 0.2s ease;
+}
+
+.collapseButton:hover {
+  transform: scale(1.1);
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.timeControls {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.forwardBackward {
+  background: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  font-family: monospace;
+  font-size: 16px;
+  cursor: pointer;
+  color: var(--primary);
+  padding: 5px;
+  transition: transform 0.2s ease;
+}
+
+.forwardBackward:hover {
+  transform: scale(1.1);
+  color: var(--primary);
+}
+
+.prevNext {
+  background: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  font-family: monospace;
+  font-size: 16px;
+  cursor: pointer;
+  color: var(--primary);
+  padding: 5px;
+  transition: transform 0.2s ease;
+}
+
+.prevNext:hover {
+  transform: scale(1.1);
+  color: var(--primary);
+}
+
+.playPause {
+  background: var(--primary);
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 15px;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.playPause:hover {
+  transform: scale(1.1);
+  background: #d1006d;
+}
+
+.play {
+  position: relative;
+  left: 2px;
+}
+
+.trackTitle-container {
+  width: 150px; /* or whatever width suits your design */
+  overflow: hidden; /* hides text that overflows */
+  position: relative;
+}
+
+.trackTitle {
+  color: #333;
+  font-size: clamp(14px, 2vw, 24px); /* Adjusts size dynamically */
+  font-weight: 600;
+  font-family: "Arial", sans-serif;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+
+.currentTime,
+.duration {
+  font-family: monospace;
+  font-size: 14px;
+  color: #666;
+  padding: 0 5px;
+}
+
+.progressBarWrapper {
+  position: relative;
+  width: 100%;
+  height: 11px;
+  margin: 10px 0;
+}
+
+.progressBar {
+  appearance: none;
+  background: var(--bar-bg);
+  border-radius: var(--roundedCorner);
+  position: relative;
+  width: 100%;
+  height: 11px;
+  outline: none;
+  cursor: pointer;
+}
+
+/* Progress Bar - Safari */
+.progressBar::-webkit-slider-runnable-track {
+  background: var(--bar-bg);
+  border-radius: var(--roundedCorner);
+  height: 11px;
+  outline: none;
+}
+
+/* Progress Bar - Firefox */
+.progressBar::-moz-range-track {
+  background: var(--bar-bg);
+  border-radius: var(--roundedCorner);
+  position: relative;
+  width: 100%;
+  height: 11px;
+  outline: none;
+}
+
+.progressBar::-moz-focus-outer {
+  border: 0;
+}
+
+/* Progress Bar - Chrome and Safari */
+.progressBar::before {
+  content: "";
+  height: 11px;
+  width: var(--seek-before-width);
+  background-color: var(--seek-before-color);
+  border-top-left-radius: var(--roundedCorner);
+  border-bottom-left-radius: var(--roundedCorner);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  cursor: pointer;
+}
+
+/* Progress Bar - Firefox */
+.progressBar::-moz-range-progress {
+  background-color: var(--seek-before-color);
+  border-top-left-radius: var(--roundedCorner);
+  border-bottom-left-radius: var(--roundedCorner);
+  height: 11px;
+}
+
+/* Knobby - Chrome and Safari */
+.progressBar::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  border: none;
+  background-color: var(--knobby);
+  cursor: pointer;
+  position: relative;
+  margin: -2px 0 0 0;
+  z-index: 3;
+  box-sizing: border-box;
+  transition: transform 0.2s ease;
+}
+
+/* Knobby while dragging - Chrome and Safari */
+.progressBar:active::-webkit-slider-thumb {
+  transform: scale(1.2);
+  background: var(--selectedKnobby);
+}
+
+/* Knobby - Firefox */
+.progressBar::-moz-range-thumb {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  border: transparent;
+  background-color: var(--knobby);
+  cursor: pointer;
+  position: relative;
+  z-index: 3;
+  box-sizing: border-box;
+  transition: transform 0.2s ease;
+}
+
+/* Knobby while dragging - Firefox */
+.progressBar:active::-moz-range-thumb {
+  transform: scale(1.2);
+  background: var(--selectedKnobby);
+}
+
+.chapter {
+  display: block;
+  height: 11px;
+  background-color: var(--primary);
+  position: absolute;
+  top: 0;
+  left: var(--left);
+  width: var(--width);
+  pointer-events: none;
+  z-index: 2;
+  opacity: 0.7;
+}
+
+.chapter.start {
+  border-top-left-radius: var(--roundedCorner);
+  border-bottom-left-radius: var(--roundedCorner);
+}
+
+.chapter.end {
+  border-top-right-radius: var(--roundedCorner);
+  border-bottom-right-radius: var(--roundedCorner);
+}
+
+/* Add smooth transition when expanding/collapsing */
+.expandedContent {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.audioPlayer:not(.expanded) .expandedContent {
+  opacity: 0;
+  transform: translateY(10px);
+  pointer-events: none;
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 480px) {
+  .audioPlayer.expanded {
+    width: calc(100% - 40px);
+    bottom: 10px;
+    right: 20px;
+    left: 20px;
+  }
+}
