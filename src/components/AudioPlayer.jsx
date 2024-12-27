@@ -76,8 +76,17 @@ const AudioPlayer = ({ chapters, timeJump }) => {
             <button className={styles.forwardBackward} onClick={backThirty}>
               <BsArrowLeftShort /> 30
             </button>
-            <button onClick={togglePlayPause} className={styles.playPause}>
-              {isPlaying ? <FaPause /> : <FaPlay className={styles.play} />}
+            <button
+              onClick={togglePlayPause}
+              className={`${styles.playPause} ${
+                isPlaying ? styles.isPlaying : ""
+              }`}
+            >
+              {isPlaying ? (
+                <FaPause className={styles.icon} />
+              ) : (
+                <FaPlay className={styles.icon} />
+              )}
             </button>
             <button className={styles.forwardBackward} onClick={forwardThirty}>
               30 <BsArrowRightShort />
