@@ -88,10 +88,13 @@ const AudioProvider = ({ children }) => {
 
     const forwardThirty = () => {
       if (audioRef.current) {
-        audioRef.current.currentTime = Math.min(
-          duration,
-          audioRef.current.currentTime + 30
-        );
+        const newTime = audioRef.current.currentTime + 30;
+        if (newTime >= duration) {
+          // If we skip beyond the end, jump to next track
+          nextTrack();
+        } else {
+          audioRef.current.currentTime = newTime;
+        }
       }
     };
 
@@ -158,6 +161,25 @@ const AudioProvider = ({ children }) => {
     trackList,
     currentTrackIndex,
   ]);
+
+  // Auto-play when the context first mounts (page load)
+  useEffect(() => {
+    // If there's a valid track, attempt to play it.
+    if (track) {
+      contextValue.togglePlayPause(); // auto-play first song
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  // Whenever the "track" changes (e.g., next/prev), auto-play again
+  useEffect(() => {
+    if (track) {
+      // We'll directly call "handlePlay" from contextValue
+      // This ensures the newly-selected track starts playing automatically
+      contextValue.togglePlayPause();
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [track]);
 
   return (
     <AudioContext.Provider value={contextValue}>
