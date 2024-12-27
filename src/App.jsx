@@ -1,39 +1,41 @@
-import React, { useMemo } from "react";
+import React from "react";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { HashRouter } from "react-router-dom";
 import { ThemeProvider } from "styled-components";
 import { QueryClient, QueryClientProvider } from "react-query";
 import useDarkMode from "use-dark-mode";
-import AppContext from "./AppContext";
+import AppContext from "./contexts/AppContext";
 import MainApp from "./MainApp";
 import GlobalStyles from "./theme/GlobalStyles";
 import { lightTheme, darkTheme } from "./theme/themes";
 import CustomCursor from "./cursor/CustomCursor";
+import { AudioProvider } from "./contexts/AudioContext";
+import AudioPlayer from "./components/AudioPlayer";
 
 const queryClient = new QueryClient();
 
 function App() {
     const darkMode = useDarkMode(true);
 
-    // Memoize the context value to avoid unnecessary re-renders
-    const contextValue = useMemo(() => ({ darkMode }), [darkMode]);
+    const contextValue = React.useMemo(() => ({ darkMode }), [darkMode]);
 
     return (
         <QueryClientProvider client={queryClient}>
-            <AppContext.Provider value={contextValue}>
-                <ThemeProvider theme={darkMode.value ? darkTheme : lightTheme}>
-                    <GlobalStyles />
-                    <div className="App">
-                        <CustomCursor />
-                        <HashRouter>
-                            {" "}
-                            {/* Use HashRouter here */}
-                            <MainApp />
-                        </HashRouter>
-                    </div>
-                </ThemeProvider>
-            </AppContext.Provider>
+        <AppContext.Provider value={contextValue}>
+            <ThemeProvider theme={darkMode.value ? darkTheme : lightTheme}>
+            <GlobalStyles />
+            <div className="App">
+                <CustomCursor />
+                <HashRouter>
+                <AudioProvider>
+                    <MainApp />
+                    <AudioPlayer />
+                </AudioProvider>
+                </HashRouter>
+            </div>
+            </ThemeProvider>
+        </AppContext.Provider>
         </QueryClientProvider>
     );
 }
