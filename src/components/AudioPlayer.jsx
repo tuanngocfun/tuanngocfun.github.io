@@ -48,7 +48,12 @@ const AudioPlayer = ({ chapters, timeJump }) => {
       className={`${styles.audioPlayer} ${isExpanded ? styles.expanded : ""}`}
     >
       {/* Our audio element */}
-      <audio ref={audioRef} preload="metadata" onTimeUpdate={updateTime}>
+      <audio
+        ref={audioRef}
+        preload="metadata"
+        onTimeUpdate={updateTime}
+        onEnded={nextTrack}
+      >
         <track kind="captions" />
       </audio>
       {/* Floating Icon (Collapsed State) */}
