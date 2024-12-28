@@ -8,8 +8,8 @@ import {
   BsSkipStart,
   BsSkipEnd,
 } from "react-icons/bs";
-import { FaPlay, FaPause } from "react-icons/fa";
-import { IoMdExpand, IoMdContract } from "react-icons/io";
+import { FaPlay, FaPause, FaMusic } from "react-icons/fa";
+import { IoMdContract } from "react-icons/io";
 import { AudioContext } from "../contexts/AudioContext";
 
 const AudioPlayer = ({ chapters, timeJump }) => {
@@ -59,7 +59,7 @@ const AudioPlayer = ({ chapters, timeJump }) => {
       {/* Floating Icon (Collapsed State) */}
       {!isExpanded && (
         <button onClick={toggleExpand} className={styles.floatingIcon}>
-          <IoMdExpand />
+          <FaMusic />
         </button>
       )}
       {/* Expanded Content */}
@@ -87,11 +87,10 @@ const AudioPlayer = ({ chapters, timeJump }) => {
                 isPlaying ? styles.isPlaying : ""
               }`}
             >
-              {isPlaying ? (
-                <FaPause className={styles.icon} />
-              ) : (
-                <FaPlay className={styles.icon} />
-              )}
+              {/* Add spinning effect div */}
+              <div className={styles.spinningEffect} />
+              {/* Icon */}
+              {isPlaying ? <FaPause /> : <FaPlay />}
             </button>
             <button className={styles.forwardBackward} onClick={forwardThirty}>
               30 <BsArrowRightShort />
