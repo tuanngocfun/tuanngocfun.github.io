@@ -43,11 +43,11 @@
         },
         {
           "icon": "images/skills/vector-db.png",
-          "title": "Vector Retrieval"
+          "title": "Vector Search"
         },
         {
           "icon": "images/skills/wandb.png",
-          "title": "Experiment Tracking"
+          "title": "Weights & Biases"
         }
       ]
     },
