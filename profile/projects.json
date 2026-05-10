@@ -92,6 +92,18 @@
       "tags": ["TypeScript", "NodeJS", "GO", "Bash Script", "CouchDB", "Blockchain"]
     },
     {
+      "image": "images/projects/cpu-scheduling-algo.gif",
+      "title": "CPU Scheduling Algorithm",
+      "bodyText": "- Created a desktop application providing essential graphs for calculating various CPU scheduling algorithms\n- Developed the UI using Swing GUI\n- Calculated waiting times, turnaround times, and their averages responsively\n- Wrote unit tests to check the correctness of each algorithm\n- Drew Gantt Charts to depict the scheduling progress\n- Implemented scheduling algorithms for CPU and I/O and performed calculations",
+      "links": [
+        {
+          "text": "GitHub",
+          "href": "https://github.com/tuanngocfun/CPU-Scheduling-Algo"
+        }
+      ],
+      "tags": ["Java", "Swing", "Unit Test", "Gantt Chart", "Maven"]
+    },
+    {
       "image": "images/projects/kenken.png",
       "title": "KenKen Puzzle Android Mobile Game",
       "bodyText": "- Designed a Simple Java Kotlin Android Mobile Game Application\n- Applied Java and Kotlin to construct the game's logic on the console before migrating to Android\n- Utilized the Model-View-Controller-ViewModel (MVCVM) architecture\n- Leveraging XML layouts and Android Studio's drag-and-drop editor for a user-centric design\n- Sets up observers on LiveData objects to automatically update the UI in response to data changes",
