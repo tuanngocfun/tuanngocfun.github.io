@@ -1,17 +1,28 @@
 {
     "experiences": [
         {
-            "title": "Software Developer",
-            "subtitle": "FPT Software",
-            "workType": "Full-time",
+            "title": "PACE-UP Research Scholar / Master's Thesis Researcher",
+            "subtitle": "Vietnamese-German University; joint thesis with Hochschule Darmstadt",
+            "workType": "Full-time Research",
             "workDescription": [
-                "Learn about the Academy Website industry's landscape.",
-                "Collaborated in a team of 6 people ( including software engineers and trainer).",
-                "Learn to assist and develop infrastructure setup.",
-                "Research Spring Security, Spring Thymeleaf and Spring Hibernate.",
-                "Developing front-end interfaces and studying techniques for writing effective tests for our applications."
+                "**Delivered:** Multimodal AI workflow converting clinical reports/images into structured datasets, retrieval inputs, model prompts, and evaluation artifacts.",
+                "**Impact:** Made model behavior measurable through diagnosis accuracy, latency, groundedness, traceability, retrieval quality, and failure-pattern tracking.",
+                "**Research:** Built Multimodal RAG for Leishmaniasis Diagnosis with 121-case retrieval corpus and 56-case held-out test set; Gemma4 RAG reached 82.6% diagnosis accuracy (+6.7 pp).",
+                "**Tech:** Python, PyTorch, Hugging Face, FastAPI, Qdrant/FAISS, PostgreSQL, Docker, Linux, Git, prompt/evaluation workflows."
             ],
-            "dateText": "03/2023 – 06/2023"
+            "dateText": "12/2025 - Present"
+        },
+        {
+            "title": "Java Backend Engineer Intern",
+            "subtitle": "FPT Software",
+            "workType": "Internship",
+            "workDescription": [
+                "**Delivered:** Backend web features, environment setup, debugging support, and integration work inside a 6-person engineering/training team.",
+                "Learn about the Academy Website industry's landscape.",
+                "Research Spring Security, Spring Thymeleaf and Spring Hibernate.",
+                "**Tech:** Java, Spring Security, Hibernate, Thymeleaf, SQL-backed services, REST/API integration, Git-based collaboration."
+            ],
+            "dateText": "03/2023 - 06/2023"
         }
     ]
 }

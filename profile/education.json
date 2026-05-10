@@ -1,17 +1,26 @@
 {
     "education":[
         {
-            "title": "September 2019 - December 2023",
-            "cardTitle": "Computer Science Engineering",
-            "cardSubtitle":"Vietnamese-German University, Ben Cat, BD",
-            "cardDetailedText": "Rank - Good",
+            "title": "September 2024 - June 2026 (Expected)",
+            "cardTitle": "M.Sc. Computer Science",
+            "cardSubtitle":"Hochschule Darmstadt University of Applied Sciences / Vietnamese-German University",
+            "cardDetailedText": "PACE-UP Master's Thesis Scholarship; Focus on AI/ML, Computer Vision, Multimodal RAG",
+            "icon" : {
+                "src": "images/education/tcu-symbol.jpg"
+            }
+        },
+        {
+            "title": "September 2019 - November 2024",
+            "cardTitle": "B.Sc. Computer Science",
+            "cardSubtitle":"Frankfurt University of Applied Sciences / Vietnamese-German University",
+            "cardDetailedText": "DAAD Scholarship; DAAD Additional Sur-place Scholarships (2x); Merit Scholarship (2x)",
             "icon" : {
                 "src": "images/education/tcu-symbol.jpg"
             }
         },
         {
             "title": "September 2016 - June 2019",
-            "cardSubtitle":"Nguyen Cong Tru, Go Vap, HCM"
+            "cardSubtitle":"Nguyen Cong Tru High School, Go Vap, HCM"
         }
     ]
 }

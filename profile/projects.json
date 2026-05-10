@@ -1,9 +1,32 @@
 {
   "projects": [
     {
+      "image": "images/projects/human-animation-detection.png",
+      "title": "Human Detection in Animated Movies",
+      "bodyText": "- Built a YOLOv8 computer-vision pipeline for animated human detection\n- Improved portfolio-reported performance by **+6% vs baseline**\n- Thesis experiments reached **76.1% mAP@50** after preprocessing/augmentation\n- Cross-domain tests up to **89.3% mAP@50**\n- Tech: Python, PyTorch, YOLOv8, TensorFlow, scikit-learn, Streamlit, Real-ESRGAN, hash/cosine duplicate filtering, model-assisted labeling, transfer learning",
+      "links": [
+        {
+          "text": "Report",
+          "href": "https://drive.google.com/file/d/1db2hP4xf0jy9J3wUoYV2Q6lw8DdYmcYK/view"
+        },
+        {
+          "text": "Video",
+          "href": "https://drive.google.com/file/d/11jKXQ967PMFYEzGckFY2jSM2SjV88Tl3/view?usp=sharing"
+        }
+      ],
+      "tags": ["PyTorch", "Python", "YOLOv8", "TensorFlow", "scikit-learn", "Streamlit", "Real-ESRGAN", "Computer Vision"]
+    },
+    {
+      "image": "images/projects/green-travel.png",
+      "title": "Green Travel Mobile App - AI, Backend, and Blockchain Prototype",
+      "bodyText": "- Built mobility workflows for trip uploads, maps, rewards, analytics, emissions tracking, and AI-assisted transportation-mode detection\n- Deployed a sensor-classification API with **97.83% accuracy** on collected test data and **93.48% accuracy** on Kaggle test data using NN/CNN variants\n- Tech: React Native, TypeScript, Firebase Cloud Functions, Firestore, PostgreSQL/Cloud SQL, FastAPI, Docker, REST APIs, Polygon Amoy, Solidity/Hardhat, wallet/reward contracts",
+      "links": [],
+      "tags": ["React Native", "TypeScript", "FastAPI", "Docker", "PostgreSQL", "Firebase", "Solidity", "AI", "Blockchain"]
+    },
+    {
       "image": "images/projects/portfolio.png",
-      "title": "Portfolio",
-      "bodyText": "- Developer Portfolio Website made in React\n -  Fully customisable and dynamic, easily change data and images.\n - Dark Mode Support",
+      "title": "Portfolio Website",
+      "bodyText": "- Developer Portfolio Website made in React\n- Fully customisable and dynamic, easily change data and images\n- Dark Mode Support",
       "links": [
         {
           "text": "GitHub",
@@ -17,36 +40,33 @@
       "tags": ["React", "Portfolio", "JavaScript"]
     },
     {
-      "image": "images/projects/human-animation-detection.png",
-      "title": "AI Application for Detecting Human in Animation Movies",
-      "bodyText": "- Developed Preprocessing strategy to filter image duplication and use open source pretrained model to detect human in animation movies\n- Increased 6% accuracy from using customized dataset compared to baseline model",
+      "image": "images/projects/web-vuln-defense.png",
+      "title": "Web Vulnerability Defense - Pentesting Mini E-Business",
+      "bodyText": "- Pentesting a mini E-business project with MVC architecture\n- Built with PHP, Docker, and MySQL\n- Implemented security testing for web vulnerabilities\n- Dockerized deployment with automated migration scripts",
       "links": [
         {
-          "text": "Report",
-          "href": "https://drive.google.com/file/d/1db2hP4xf0jy9J3wUoYV2Q6lw8DdYmcYK/view?usp=sharing"
-        },
-        {
-          "text": "Video",
-          "href": "https://drive.google.com/file/d/11jKXQ967PMFYEzGckFY2jSM2SjV88Tl3/view?usp=sharing"
+          "text": "GitHub",
+          "href": "https://github.com/tuanngocfun/web-vuln-defense"
         }
       ],
-      "tags": [
-        "Pytorch",
-        "Python",
-        "sklearn",
-        "YOLO",
-        "Wandb",
-        "Bash Script",
-        "TensorFlow",
-        "Real ESRGAN",
-        "Streamlit",
-        "Wandb"
-      ]
+      "tags": ["PHP", "Docker", "MySQL", "Security", "Pentesting", "MVC"]
+    },
+    {
+      "image": "images/projects/dna-storage.png",
+      "title": "DNA Storage - Locally Balanced Constraints",
+      "bodyText": "- Implementation and verification suite for locally balanced binary string constraints based on Ge22 paper\n- Validated Sections IV & V through automated testing, graph algorithms, and mathematical recurrence verification\n- Implemented Algorithm 1 graph-based optimal rate search and Theorem 2 recurrence verification\n- Computed Shannon capacity using spectral radius\n- Interactive React-based visualization demos",
+      "links": [
+        {
+          "text": "GitHub",
+          "href": "https://github.com/tuanngocfun/DNA_storage_locally_balance"
+        }
+      ],
+      "tags": ["Python", "NumPy", "SymPy", "Graph Algorithms", "Coding Theory", "React"]
     },
     {
       "image": "images/projects/app-selling-code.png",
       "title": "App Selling Code Game",
-      "bodyText": "- Built website using NodeJS to sell code Game for client\n - Built SQL scripts to preprocess raw data and populate data in PostgreSQL database\n - Built CRUD operations on multiple components with PostgreSQL database\n - Integrated project with Docker and SSO from Facebook and Google api\n - Applied Agile methodologies in project development, Trell with 6-week Sprint delivery to submit teacher’s requirements",
+      "bodyText": "- Built website using NodeJS to sell code Game for client\n- Built SQL scripts to preprocess raw data and populate data in PostgreSQL database\n- Built CRUD operations on multiple components with PostgreSQL database\n- Integrated project with Docker and SSO from Facebook and Google API\n- Applied Agile methodologies with 6-week Sprint delivery",
       "links": [
         {
           "text": "GitHub",
@@ -57,21 +77,24 @@
           "href": "https://risen-gaming.onrender.com/"
         }
       ],
-      "tags": [
-        "Javascript",
-        "React",
-        "NodeJS",
-        "PostgreSQL",
-        "Docker",
-        "MongoDB",
-        "SSO",
-        "Render Cloud"
-      ]
+      "tags": ["JavaScript", "React", "NodeJS", "PostgreSQL", "Docker", "MongoDB", "SSO"]
+    },
+    {
+      "image": "images/projects/food-supply-chain.png",
+      "title": "Food Supply Chain - Blockchain",
+      "bodyText": "- Built web app using TypeScript and GO\n- Modified open-source Hyperledger Fabric code to establish network in GO\n- Used 3 organizations: Manufacturer, Distributor and Retailer\n- Built smart contracts and ledger to store data in CouchDB\n- Built REST API for different organizers\n- Automated network building, chaincode installation with bash scripts",
+      "links": [
+        {
+          "text": "GitHub",
+          "href": "https://gitlab.com/tuanngocfun/blockchain-food-supply-chain"
+        }
+      ],
+      "tags": ["TypeScript", "NodeJS", "GO", "Bash Script", "CouchDB", "Blockchain"]
     },
     {
       "image": "images/projects/kenken.png",
       "title": "KenKen Puzzle Android Mobile Game",
-      "bodyText": "- Design a Simple Java Kotlin Android Mobile Game Application\n - Applied Java and Kotlin to construct the game's logic on the console before migrating to Android\n - Utilized the Model-View-Controller-ViewModel (MVCVM) architecture\n - Leveraging XML layouts and Android Studio’s drag-and-drop editor for a user-centric design.\n - Sets up observers on LiveData objects to automatically update the UI in response to data changes\n - Design Fragment Lifecycle to handle the game’s state and user interactions",
+      "bodyText": "- Designed a Simple Java Kotlin Android Mobile Game Application\n- Applied Java and Kotlin to construct the game's logic on the console before migrating to Android\n- Utilized the Model-View-Controller-ViewModel (MVCVM) architecture\n- Leveraging XML layouts and Android Studio's drag-and-drop editor for a user-centric design\n- Sets up observers on LiveData objects to automatically update the UI in response to data changes",
       "links": [
         {
           "text": "APK",
@@ -83,59 +106,6 @@
         }
       ],
       "tags": ["Java", "Kotlin", "XML", "Android Studio", "Gradle"]
-    },
-    {
-      "image": "images/projects/cpu-scheduling-algo.gif",
-      "title": "CPU Scheduling Algorithm",
-      "bodyText": "- Created a desktop application providing essential graphs for calculating various CPU scheduling algorithms.\n - Developed the UI using Swing GUI.\n - Calculated waiting times, turnaround times, and their averages responsively.\n - Wrote unit tests to check the correctness of each algorithm.\n - Drew Gantt Charts to depict the scheduling progress.\n - Implemented scheduling algorithms for CPU and I/O and performed calculations.",
-      "links": [
-        {
-          "text": "GitHub",
-          "href": "https://github.com/tuanngocfun/CPU-Scheduling-Algo"
-        }
-      ],
-      "tags": ["Java", "Swing", "Unit Test", "Gantt Chart", "Maven"]
-    },
-    {
-      "image": "images/projects/food-supply-chain.png",
-      "title": "Food Supply Chain",
-      "bodyText": "- Build web app using Typescript and GO \n- Modified open-source code to be able to establish network written in GO\n- Using 3 organization from default code named it as Manufacturer, Distributor and Retailer\n - Collaborate and build smart contracts and ledger to store data in CouchDB, and build REST API for different organizers\n - Collaborate and build bash script to automate the process of building network, installing chaincode, installing web app ",
-      "links": [
-        {
-          "text": "GitHub",
-          "href": "https://gitlab.com/tuanngocfun/blockchain-food-supply-chain"
-        },
-        {
-          "text": "Open Source Code",
-          "href": "https://github.com/hyperledger/fabric/tree/mergify/bp/release-2.2/pr-3750"
-        }
-      ],
-      "tags": ["TypeScript", "NodeJS", "GO", "Bash Script", "CouchDB"]
-    },
-
-    {
-      "image": "images/projects/blog.png",
-      "title": "Web Blog",
-      "bodyText": "- Developed simple web blog for users\n - Implementing from idea of Viblo web blog\n - Built REST API with Spring Boot and PostgreSQL\n - Built WebMVC UI and Bootstrap\n - Built authentication with Spring Security\n - Built CRUD operations on multiple components with PostgreSQL database",
-      "links": [
-        {
-          "text": "Video",
-          "href": "https://drive.google.com/file/d/1QnURxwzEBFrS6mvtqSk18ve3TJpRjz4b/view?usp=sharing"
-        }
-      ],
-      "tags": ["Java", "Spring Boot", "JavaScript", "HTML", "CSS", "WebMVC UI"]
-    },
-    {
-      "image": "images/projects/Time-scheduler.png",
-      "title": "Time Scheduler Web App",
-      "bodyText": "- Developed Time Scheduler Web App in Java\n- Using Tomcat Server and Postgres Database\n - Establishing the Cron Job to run the scheduler every period of time",
-      "links": [
-        {
-          "text": "GitHub",
-          "href": "https://github.com/thangvip4321/Time-Scheduler"
-        }
-      ],
-      "tags": ["Java", "JavaFX", "Cron Job", "PostgreSQL"]
     }
   ]
 }
